@@ -9,7 +9,7 @@ import (
 	"./pets"
 )
 
-func describePet(pet pets.Pet) string {
+func describePet(pet pets.IPet) string {
 	return fmt.Sprintf("%s is %d years old. It's sound is %s", pet.GetName(), pet.GetAge(), pet.GetSound())
 }
 
