@@ -1,4 +1,4 @@
-# Abstract Factory Pattern ♻🏭
+# Abstract Factory Pattern 🏭
 
 Abstract Factory pattern is a creational design pattern. It is used when we need to create multiple families of similar products.
 
