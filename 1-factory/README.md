@@ -1,6 +1,6 @@
 # Factory Pattern 🏭
 
-Factory pattern in a commonly used creational design pattern. It is normally used when the user is expected to choose between multiple options.
+Factory pattern is a commonly used creational design pattern. It is normally used when the user is expected to choose between multiple options.
 
 Let's take an example to understand.
 
