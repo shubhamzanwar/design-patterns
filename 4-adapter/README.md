@@ -1,21 +1,23 @@
 # Adapter Pattern 🔌
 
-The Adapter pattern is a structural design pattern. It allows 2 or more incompatible objects to interface with each other. The first thing that comes to mind it probably the adapters for wall-sockets that allow your indian phone charger to fit into european wall sockets! 😂. That's exactly what adapters are. They are wrapper classes written around non-uniform classes so that the end result exposes a uniform API.
+The Adapter pattern is a structural design pattern. It allows 2 or more incompatible objects to interface with each other.
+
+The first thing that comes to mind it probably the adapters for wall-sockets that allow your Indian phone charger to fit into European wall sockets! 😂 That's exactly what adapters are. They are wrapper classes written around non-uniform classes so that the end result exposes a uniform API.
 
 In case this is difficult to grasp, the following example should help:
 
-### Translator
+### Translator example
 
 Consider that you're a regular english speaking person who has just migrated to Spain. 🇪🇸
-Your neighbor is a pleasant looking person and you'd like to be friends with this individual. However, there's one problem. 😨
+Your neighbour is a pleasant looking person and you'd like to be friends with this individual. However, there's one problem. 😨
 
-_Every one in your neighborhood speaks Español exclusively. Oh, also, you don't speak spanish_ 😞
+_Every one in your neighbourhood speaks Español exclusively. Oh, also, you don't speak Spanish_ 😞
 
 In order to communicate with your potential friend, you would need some sort of translator to help convert your speech from English to Spanish. In programming terms, this translator is what we call an adapter!
 
 Let's understand at how this would look in code.
 
-As a first step, let's create the interface that a normal spanish-speaking person would implement along with the structs for both, the spanish and the english speaking person.
+As a first step, let's create the interface that a normal Spanish-speaking person would implement along with the structs for both, the Spanish and the English speaking person.
 
 ```go
 type SpeakSpanish interface {
@@ -58,7 +60,7 @@ func translate(engMessage string) spanishMessage string {
 }
 ```
 
-Closely observing the adapter will show you that since it is a struct and has the `greetInSpanish` method, it implements the `SpeakSpanish` interface. This is good because once we wrap our english speaker in this adapter, we essentially get a spanish speaker.
+Closely observing the adapter will show you that since it is a struct and has the `greetInSpanish` method, it implements the `SpeakSpanish` interface. This is good because once we wrap our english speaker in this adapter, we essentially get a Spanish speaker.
 
 _Also notice that we have a translation function as a util along with the adapter. Normally, you would use some service, like google translate, to translate the messages_
 
@@ -98,6 +100,6 @@ Español says:  ¡Hola!
 English Woman says:  ¡Hola!
 ```
 
-Hurray! The translation worked; the english woman and spanish dude can now be friends! 👩🏻‍🤝‍👨🏾
+Hurray! The translation worked; the english woman and Spanish dude can now be friends! 👩🏻‍🤝‍👨🏾
 
-Design patterns save the day, yet again 😁
+Design patterns save the day, yet again 🚀😁
