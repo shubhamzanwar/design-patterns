@@ -1,5 +1,7 @@
 # Factory Pattern 🏭
 
+_**This post was originally published at this [blog](shubhamzanwar.com/blog)**_
+
 Factory pattern is a commonly used creational design pattern. It is normally used when the user is expected to choose between multiple options.
 
 Let's take an example to understand.
@@ -29,17 +31,60 @@ type Pet interface {
 }
 ```
 
-Now, you can create any number of pets that have the same features (`implement the same interface`). You could have cats, dogs, fish, parrots, anything - as long as the implement the `Pet` interface!😯
+Now, you can create any number of pets that have the same features (`implement the same interface`). You could have cats, dogs, fish, parrots, anything - as long as the implement the `Pet` interface!😯 As of now, let's create the Dog and the Cat:
+
+```go
+// pet is a struct that implements Pet interface and
+// would be used in any animal struct that we create.
+// See `Dog` and `Cat` below
+type pet struct {
+    name  string
+    age   int
+    sound string
+}
+
+func (p *pet) GetName() string {
+    return p.name
+}
+
+func (p *pet) GetSound() string {
+    return p.sound
+}
+
+func (p *pet) GetAge() int {
+    return p.age
+}
+
+type Dog struct {
+    pet
+}
+
+type Cat struct {
+    pet
+}
+```
 
 An additional thing you would require is a factory that would return a different pet (dog/cat) based on the user's request. Simply put, if the user asks for a dog, give them a cute doggo, duh.🙄🦮
 
 ```go
 func GetPet(type string) Pet {
     if type == "dog" {
-        // return a new Dog
+        return &Dog{
+            pet{
+                name:  "Chester",
+                age:   2,
+                sound: "bark",
+            },
+        }
     }
     if type === "cat" {
-        // return a new Cat
+        return &Cat{
+            pet{
+                name:  "Mr. Buttons",
+                age:   3,
+                sound: "meow",
+            },
+        }
     }
 }
 ```
@@ -53,3 +98,35 @@ Congratulations! you've created a Pet shop using the factory pattern🎉❤️
 Let's look at it from the perspective of the user. All they would need to do is call the `GetPet` function with whatever config (in this case, `type`) they want. In return, all they know is that they are getting a `Pet`.🤔 This may sound bizarre in the real world sense of things, but when it comes to code, it's better to maintain abstraction.😌
 
 The users can freely go about "using" the `Pet` as they like. This "usage" would remain the same irrespective of what type of pet they got back (because all pets implement the common interface!!)
+
+Let's test it out
+
+```go
+func describePet(pet Pet) string {
+    return fmt.Sprintf("%s is %d years old. It's sound is %s", pet.GetName(), pet.GetAge(), pet.GetSound())
+}
+
+func main() {
+    petType := "dog"
+
+    dog := GetPet(petType)
+    petDescription := describePet(dog)
+
+    fmt.Println(petDescription)
+    fmt.Println("-------------")
+
+    petType = "cat"
+    cat := GetPet(petType)
+    petDescription = describePet(cat)
+
+    fmt.Println(petDescription)
+}
+```
+
+The output should look like:
+
+```text
+Chester is 2 years old. It's sound is bark
+-------------
+Mr. Buttons is 3 years old. It's sound is meow
+```
