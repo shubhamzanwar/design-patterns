@@ -14,6 +14,6 @@ In this repository, I have curated a list of design patterns that may help you i
 2. [Abstract Factory pattern](./2-abstract-factory)
 3. [Builder Pattern](./3-builder)
 4. [Adapter Pattern]('./4-adapter)
-5. [Bridge Pattern]('./5-bridge)
+5. [Bridge Pattern](./5-bridge)
 
 wip
