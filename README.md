@@ -1,5 +1,7 @@
 # Design Patterns 🚀🧩
 
+[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/avelino/awesome-go)
+
 Design Patterns are ways of solving different problems we face while designing software solutions. Having too many if/else conditions? Need to implement multiple ways of initializing objects? Writing too many parsers? There's probably a design pattern to help you structure your code elegantly!
 
 An important thing to note though, is that design patterns are but a set of blueprints/recommendations. They are not exact solutions to problems. Rather, they are a concepts/conventions to follow in your code.
