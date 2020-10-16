@@ -1,10 +1,4 @@
----
-title: "Design Patterns: Facade Factory Pattern 🎭"
-subTitle: "Taking a look at the facade factory design pattern with an implementation in go"
-coverImage: "/img/design-pattern.jpg"
-coverCredit: 'Photo by <a href="https://unsplash.com/@eskandthewood?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Silvio Kundt</a> on <a href="https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>'
-date: 2020-10-16
----
+# Design Patterns: Facade Factory Pattern 🎭
 
 The facade pattern is a structural design pattern, commonly used when there is some interaction with a complex external library or service.
 
