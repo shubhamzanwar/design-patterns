@@ -18,5 +18,6 @@ In this repository, I have curated a list of design patterns that may help you i
 4. [Adapter Pattern](./4-adapter)
 5. [Bridge Pattern](./5-bridge)
 6. [Decorator Pattern](./6-decorator)
+7. [Facade Pattern](./7-facade)
 
 wip
