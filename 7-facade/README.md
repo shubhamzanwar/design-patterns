@@ -1,4 +1,4 @@
-# Design Patterns: Facade Factory Pattern 🎭
+# Design Patterns: Facade Pattern 🎭
 
 The facade pattern is a structural design pattern, commonly used when there is some interaction with a complex external library or service.
 
