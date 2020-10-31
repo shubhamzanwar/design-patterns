@@ -19,5 +19,6 @@ In this repository, I have curated a list of design patterns that may help you i
 5. [Bridge Pattern](./5-bridge)
 6. [Decorator Pattern](./6-decorator)
 7. [Facade Pattern](./7-facade)
+8. [Flyweight Pattern](./8-flyweight)
 
 wip
