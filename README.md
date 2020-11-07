@@ -20,5 +20,6 @@ In this repository, I have curated a list of design patterns that may help you i
 6. [Decorator Pattern](./6-decorator)
 7. [Facade Pattern](./7-facade)
 8. [Flyweight Pattern](./8-flyweight)
+9. [Chain of responsibility](./9-chain-of-responsibility)
 
 wip
