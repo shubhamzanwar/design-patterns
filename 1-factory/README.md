@@ -103,7 +103,7 @@ Let's test it out
 
 ```go
 func describePet(pet Pet) string {
-    return fmt.Sprintf("%s is %d years old. It's sound is %s", pet.GetName(), pet.GetAge(), pet.GetSound())
+    return fmt.Sprintf("%s is %d years old. Its sound is %s", pet.GetName(), pet.GetAge(), pet.GetSound())
 }
 
 func main() {
@@ -126,7 +126,7 @@ func main() {
 The output should look like:
 
 ```text
-Chester is 2 years old. It's sound is bark
+Chester is 2 years old. Its sound is bark
 -------------
-Mr. Buttons is 3 years old. It's sound is meow
+Mr. Buttons is 3 years old. Its sound is meow
 ```
