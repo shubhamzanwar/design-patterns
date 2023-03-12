@@ -22,4 +22,8 @@ In this repository, I have curated a list of design patterns that may help you i
 8. [Flyweight Pattern](./8-flyweight)
 9. [Chain of responsibility](./9-chain-of-responsibility)
 
-wip
+This is the Chinese Edition, thanks to the contribution of [coolbook](https://github.com/coolbook/).
+1. [工厂模式](./1-1-工厂模式)
+1. [抽象工厂模式](./2-2-抽象工厂模式)
+
+WIP
